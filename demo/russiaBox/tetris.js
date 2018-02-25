@@ -341,4 +341,7 @@
 	
 })()
 
-Tetris.init({"width":"20","height":"15"});
+$(function(){
+	Tetris.init({"width":"20","height":"15"});
+})
+
