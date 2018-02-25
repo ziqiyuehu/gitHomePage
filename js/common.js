@@ -47,7 +47,7 @@
 				var _self = this;
 				var promCity = new Promise(function(resolve, reject){
 					/** 地理位置 */
-					$.getScript('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js',function(_result){
+					$.getScript('https://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js',function(_result){
 				        if(remote_ip_info.ret=='1'){
 				        	resolve("success");
 				        	_self.city = remote_ip_info.city;
