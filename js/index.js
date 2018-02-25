@@ -35,5 +35,10 @@ $(function(){
 		})
 	})
 	
+	/** demo跳转 */
+	$(".page-item").click(function(){
+		var tarPage = this.getAttribute("tarPage");
+		tarPage && $("#pageBody").load(tarPage);
+	})
 	
 })
