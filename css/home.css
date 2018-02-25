@@ -1,0 +1,115 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{box-sizing: border-box;line-height: 1;font-family: '新宋体';}
+a{text-decoration: none;color: #fff;}
+li{list-style: none;}
+
+body{
+	background: #000;
+}
+
+.xhead{
+	width:100%;
+	height: 60px;
+	background: #211c1c;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.xhead div{
+	float: left;
+	text-align: center;
+	line-height: 60px;
+}
+.xhead .xlogo{
+	width:140px;
+	height: 100%;
+	font-size: 30px;
+	font-weight: 700;
+	filter: blur(1px);
+	font-family: '楷体';
+	user-select: none;
+	cursor: pointer;
+}
+.page-demo{
+	position: relative;
+}
+.page-demo .head-item{
+	width:auto;
+	height: 100%;
+	font-size: 20px;
+	text-align: center;
+	padding: 0 10px 0 10px;
+}
+
+.relative-box .page-list{
+	position: absolute;
+	left: 0;
+	top: 60px;
+	background: #376b37;
+	border-radius: 3px;
+}
+
+.relative-box .page-list::before{
+	content: '';
+	position: absolute;
+	left: 40%;
+	top: -16px;
+	border: 8px solid transparent;
+	border-bottom: 8px solid #376b37;
+}
+
+.relative-box .page-list .page-item{
+	border-radius: 3px;
+	height: 60px;
+	overflow: hidden;
+	cursor: pointer;
+	text-align: center;
+	line-height: 60px;
+}
+.relative-box .page-list .page-item a{
+	white-space:nowrap;	
+}
+.relative-box .page-list .page-item:hover{
+	background: #6f9a48;
+}
+
+.xhead .weather{
+	float: right;
+	margin-right: 20px;
+	width:200px;
+	height: 60px;
+	cursor: pointer;
+	position: relative;
+}
+
+.xhead .weather span{
+	position: absolute;
+}
+.xhead .weather .weather-img{
+	left: 0;
+	top: 0;
+}
+.xhead .weather .weather-img img{
+	height: 45px;
+	margin-top: 7px;
+}
+
+.weather-all,.weather-temperature{
+	left: 70px;
+	height: 30px;
+	line-height: 30px;
+}
+.weather-all{
+	top: 0;
+}
+.weather-temperature{
+	top: 30px;
+}
+
+.page-body{
+	height: calc(100%-60px);
+}
+
+.hide{display: none;}
+.show{display: block;}

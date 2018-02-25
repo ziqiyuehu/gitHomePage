@@ -1,0 +1,80 @@
+.today-tip{
+	width:40%;
+	height:90%;
+	margin-top: 65px;
+	float: left;
+}
+.today-tip .tip{
+	font-family: "楷体";
+	width: 100%;
+	height: 18%;
+	background: #4dbbc7;
+	color: #fff;
+	box-shadow: 2px 2px 4px rgba(255,255,255,0.3);
+	margin-bottom: 2%;
+	margin-left: 2px;
+	cursor: pointer;
+	position: relative;
+	border-radius: 5px;
+}
+
+.today-tip .tip span{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+.today-tip .tip .tip-title{
+	font-style: italic;
+	font-size: 30px;
+	text-align: center;
+	line-height: 3;
+	position: absolute;
+	transition: all .5s linear;
+	transform-style: preserve-3d;
+	transform-origin: 100% 0;
+	top: 0;
+	background: #5bc37c;
+}
+.today-tip .tip:hover .tip-title{
+	transform: rotateY(90deg);
+}
+
+.today-tip .tip .tip-text{
+	font-size: 20px;
+    padding: 15px 10px;
+}
+
+
+.week-weather{
+	float: right;
+	width:55%;
+	height:90%;
+	margin-top: 65px;
+}
+.week-weather .one-day{
+	width: 20%;
+	height: 90%;
+	margin-right: 10px;
+	background: #613e3e;
+	float: right;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px rgba(255,255,255,0.3);
+	color: #fff;
+	transition: all .5s linear;
+	transform-style: preserve-3d;
+}
+.week-weather .one-day:hover{
+	transform: rotateY(360deg);
+}
+
+.week-weather .one-day span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.week-weather .one-day .date{
+	margin-top: 30px;
+}
