@@ -65,7 +65,7 @@
 				/** 天气情况 */
 				var promDetail = new Promise(function(resolve, reject){
 					$.ajax({  
-				        url:"http://api.map.baidu.com/telematics/v3/weather?location=武汉&output=json&ak=H7W5CxI0BPzKtwGcBHmpGPAz50xP1Qjw",  
+				        url:"https://api.map.baidu.com/telematics/v3/weather?location=武汉&output=json&ak=H7W5CxI0BPzKtwGcBHmpGPAz50xP1Qjw",  
 				        dataType:"jsonp",  
 				        success:function(data){
 				        	console.log(data);
