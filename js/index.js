@@ -29,13 +29,11 @@ $(function(){
 		return Tool.weather.getDetail();
 	}).then(function(data){
 		Tool.weather.setHtml(data.results[0]);
+		/** 天气详情 */
+		$("#weather").click(function(){
+			$("#pageBody").load("demo/weather/weather.html");
+		})
 	})
-	
-	/** 天气详情 */
-	$("#weather").click(function(){
-		$("#pageBody").load("demo/weather/weather.html");
-	})
-	
 	
 	
 })
