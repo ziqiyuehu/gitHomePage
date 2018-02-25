@@ -83,11 +83,15 @@ body{
 	position: relative;
 }
 
+.xhead .weather:hover{
+	background: rgba(0,0,0,0.4);
+}
+
 .xhead .weather span{
 	position: absolute;
 }
 .xhead .weather .weather-img{
-	left: 0;
+	left: 20px;
 	top: 0;
 }
 .xhead .weather .weather-img img{
@@ -96,7 +100,7 @@ body{
 }
 
 .weather-all,.weather-temperature{
-	left: 70px;
+	left: 90px;
 	height: 30px;
 	line-height: 30px;
 }
